@@ -78,6 +78,45 @@
         footer span {
             color: #53fc18;
         }
+        /* Small mobile */
+@media (max-width: 360px) {
+    body {
+        padding: 14px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 460px;
+    }
+}
+
+/* Touchscreen devices */
+@media (hover: none) {
+    .link:hover {
+        transform: none;
+    }
+
+    .link:active {
+        background: #53fc18;
+        color: #101010;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
     </style>
 </head>
 
@@ -113,7 +152,7 @@
         </div>
 
         <footer>
-            Powered by <span>Green</span>
+            Powered by <span>Parham Moayed</span>
         </footer>
 
     </main>
